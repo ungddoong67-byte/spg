@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>📦 송파구퀵서비스 맞춤 운송 차종 안내</h3>
+          <p>잠실동 신천동 풍납동 송파동 석촌동 삼전동 가락동 문정동 장지동 방이동 오금동 거여동 마천동 오륜동 가락본동 위례동 잠실본동 송파 잠실 롯데월드 가든파이브 위례신도시 법원로 강동대로 성남대로 송파대로 올림픽로 석촌호수 가락시장 송파구 전지역</p>
             <ul>
                 <li>🏍️ 송파구오토바이퀵 : 소형 긴급 화물 및 중요 서류 신속한 배송 지원</li>
                 <li>🚙 송파구다마스퀵 : 중소형 가전, 소형이사 안전한 안심 배송</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+    <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
